@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://cdn.openai.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Action Space</title>
+</head>
+<body>
+    <div class="top-nav">
+        <div class="navbar">
+            <div class="pheader-left">
+                <div class="pheader-nav pheader-menu-active">
+                    <ion-icon name="flower-outline"></ion-icon>
+                    <a class="nav-item">Overview</a>
+                    <a class="nav-item ">Documentation</a>
+                    <a class="nav-item">Examples</a>
+                </div>
+            </div>
+            <div class="pheader-right">
+                <div class="pheader-menu pheader-menu-desktop">
+                    <div class="pheader-menu-desktop-auth">
+                        <div class="nav-item" role="button">Log in</div>
+                        <div class="nav-item" role="button" id="signup">Sign up</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>   
+    <div class="page-body full-width flush docs-page">
+        <div class="docs-nav">
+            <div class="side-nav side-nav-padded">
+                <div class="side-nav-section">
+                    <div class="side-nav-header subheading">Get started</div>
+                    <ul>
+                        <li class="scroll-link side-nav-item" href="/docs/introduction">Introduction</li>
+                        <li aria-current="page" class="scroll-link side-nav-item side-nav-child active" href="/docs/introduction/overview">Overview</li>
+                        <li class="scroll-link side-nav-item side-nav-child" href="/docs/introduction/key-concepts">Key concepts</li>
+                        <li class="scroll-link side-nav-item side-nav-child" href="/docs/introduction/next-steps">Next steps</li>
+                        <li class="scroll-link side-nav-item" href="/docs/quickstart">Quickstart tutorial</li>
+                        <li class="scroll-link side-nav-item" href="/docs/libraries">Libraries</li>
+                        <li class="scroll-link side-nav-item" href="/docs/models">Models</li>
+                        <li class="scroll-link side-nav-item" href="/docs/usage-policies">Usage policies</li>
+                    </ul>
+                </div>
+                <div class="side-nav-section">
+                    <div class="side-nav-header subheading">Guides</div>
+                        <ul>
+                            <li class="scroll-link side-nav-item" href="/docs/guides/completion">Text completion</li>
+                            <li class="scroll-link side-nav-item" href="/docs/guides/code">Code completion</li>
+                            <li class="scroll-link side-nav-item" href="/docs/guides/images">Image generation</li>
+                            <li class="scroll-link side-nav-item" href="/docs/guides/fine-tuning">Fine-tuning</li>
+                            <li class="scroll-link side-nav-item" href="/docs/guides/embeddings">Embeddings</li>
+                            <li class="scroll-link side-nav-item" href="/docs/guides/moderation">Moderation</li>
+                            <li class="scroll-link side-nav-item" href="/docs/guides/safety-best-practices">Safety best practices</li>
+                            <li class="scroll-link side-nav-item" href="/docs/guides/production-best-practices">Production best practices</li>
+                        </ul>
+                </div>
+                <div class="side-nav-section">
+                    <div class="side-nav-header subheading">API Reference</div>
+                        <ul>
+                            <li class="scroll-link side-nav-item" href="/docs/api-reference/introduction">Introduction</li>
+                            <li class="scroll-link side-nav-item" href="/docs/api-reference/authentication">Authentication</li>
+                            <li class="scroll-link side-nav-item" href="/docs/api-reference/making-requests">Making requests</li>
+                            <li class="scroll-link side-nav-item" href="/docs/api-reference/models">Models</li>
+                            <li class="scroll-link side-nav-item" href="/docs/api-reference/completions">Completions</li>
+                            <li class="scroll-link side-nav-item" href="/docs/api-reference/edits">Edits</li>
+                            <li class="scroll-link side-nav-item" href="/docs/api-reference/images">Images</li>
+                            <li class="scroll-link side-nav-item" href="/docs/api-reference/embeddings">Embeddings</li>
+                            <li class="scroll-link side-nav-item" href="/docs/api-reference/files">Files</li>
+                            <li class="scroll-link side-nav-item" href="/docs/api-reference/fine-tunes">Fine-tunes</li>
+                            <li class="scroll-link side-nav-item" href="/docs/api-reference/moderations">Moderations</li>
+                            <li class="scroll-link side-nav-item" href="/docs/api-reference/engines">Engines</li>
+                            <li class="scroll-link side-nav-item" href="/docs/api-reference/parameter-details">Parameter details</li>
+                        </ul>
+
+                </div>
+            </div>
+        </div>
+        <div class="docs-body">
+            <div class="markdown-page markdown-content docs-introduction-page markdown-prompt-blockquote">
+                <div class="anchor-heading-root">
+                        <h1 class="anchor-heading">Introduction</h1>
+                </div>
+                <div class="anchor-heading-root">
+                        <h3 class="anchor-heading" name="overview">Overview</h3>
+                </div>
+                <p>The OpenAI API can be applied to virtually any task that involves understanding or generating natural language or code. We offer a spectrum of models
+                        with different levels of power suitable for different tasks, as well as the ability to fine-tune your own custom models. These models can be used for
+                        everything from content generation to semantic search and classification.</p>
+                <hr>
+                <div class="anchor-heading-root">
+                        <h2 class="anchor-heading" name="key-concepts">Key concept</h2>
+                </div>
+                    <p>We recommend completing our quickstart tutorial to get acquainted with key concepts through a hands-on, interactive example.</p> 
+            </div>
+        </div>   
+    </div>
+    <script src="/script.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
